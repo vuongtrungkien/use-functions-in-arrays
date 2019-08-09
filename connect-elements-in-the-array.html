@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>connect elements in the array</title>
+</head>
+<body>
+<script>
+    let myColor = ["Red", "Green", "White", "Black"];
+    //solution 1
+    function connect1() {
+        let connect = '';
+        for (let i = 0; i < myColor.length; i++) {
+            connect += myColor[i] + ',';
+        }
+        return connect
+    }
+
+    document.write(connect1() + "<br/>");
+
+    //solution 2
+    document.write(myColor.toString());
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert lowercase letters to uppercase</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter the string");
+        let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let lower = "abcdefghijklmnopqrstuvwxyz";
+        let array =[str[0]];
+        let result = [array];
+
+        for (let i = 0; i < str.length; i++) {
+
+            if (upper.indexOf(str[i]) !== -1 ) {
+                result.push(str[i].toLowerCase());
+            } else if (lower.indexOf(str[i]) !== -1) {
+                result.push(str[i].toUpperCase());
+            } else {
+                result.push(str[i])
+            }
+
+        }
+        result.shift();
+        document.write(result.join(''));
+    </script>
+</body>
+</html>
